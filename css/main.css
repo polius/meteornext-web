@@ -27,9 +27,9 @@ body {
   color:#0d6efd!important;
 }
 .home.nav-link:hover{
-  color:#001c40!important;
+  color:#c3c6d1!important;
 }
-.card:hover{
+.feature:hover{
   transform: translate(0, -2px);
 }
 
@@ -95,9 +95,6 @@ body {
   }
   .first {
     order: -1 !important;
-  }
-  .home.nav-link:hover{
-    color:#c3c6d1!important;
   }
 }
 
