@@ -32,24 +32,34 @@ body {
 .feature:hover{
   transform: translate(0, -2px);
 }
-
-.landing {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 60s ease infinite;
+.scrollUpButton {
+  width: 46px;
+  height: 46px;
+  opacity: 0;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #001c40;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  align-content: center;
 }
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.scrollUpButton:hover{
+  color: #fff;
+  opacity: 1!important;
 }
-
+.show {
+  opacity: 0.8!important;
+  transition: opacity 500ms;
+}
+.hide {
+  opacity: 0!important;
+  transition: opacity 500ms;
+}
+/* MOBILE */
 @media (max-width: 991px) {
   .navbar-collapse{
     margin-right:-20px;

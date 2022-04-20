@@ -8,42 +8,9 @@
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pricing.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <style>
-    .card {
-      border:none;
-      padding: 10px 50px;
-    }
-
-    .card::after {
-      position: absolute;
-      z-index: -1;
-      opacity: 0;
-      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    .card:hover {
-
-
-      transform: scale(1.02, 1.02);
-      -webkit-transform: scale(1.02, 1.02);
-      backface-visibility: hidden; 
-      will-change: transform;
-      box-shadow: 0 1rem 3rem rgba(0,0,0,.75) !important;
-    }
-
-    .card:hover::after {
-      opacity: 1;
-    }
-
-    .card:hover .btn-outline-primary{
-      color:white;
-      background:#007bff;
-    }
-
-  </style>
 </head>
 <body>
   <div style="background-color: #282A35; padding-left:15px; padding-right:15px">
@@ -81,133 +48,102 @@
   </div>
   <!-- PRICING -->
   <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
-    <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:48px; font-weight:600">Pricing</h1>
-    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:20px">A price that suits your needs</div>
+    <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:48px; font-weight:600; margin-bottom:40px">Pricing</h1>
+    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:20px">Pay only for the resources you need. Nothing more, nothing less.</div>
   </div>
 
-  <div class="container p-5" style="background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);">
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="card h-100 shadow-lg">
-          <div class="card-body">
-            <div class="text-center p-3">
-              <h5 class="card-title">Basic</h5>
-              <small>Individual</small>
-              <br><br>
-              <span class="h2">Free</span>
-              <br><br>
+  <!-- <div id="generic_price_table" style="background-color: #323445;">    -->
+  <div id="generic_price_table">   
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="generic_content clearfix" style="border-radius: 10px">                
+            <div class="generic_head_price clearfix">
+              <div class="generic_head_content clearfix">
+                <div class="head_bg"></div>
+                <div class="head">
+                  <span>Individual</span>
+                </div>
+              </div>
+              <div class="generic_price_tag clearfix">  
+                <span class="price">
+                  <span class="currency" style="font-size: 40px;">Free</span>
+                  <span class="month" style="font-weight: 400; margin-left:10px">forever</span>
+                </span>
+              </div>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Cras justo odio</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Dapibus ac facilisis in</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Vestibulum at eros</li>
-          </ul>
-          <div class="d-grid my-3">
-            <button class="btn btn-outline-dark btn-block">Select</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="card h-100 shadow-lg">
-          <div class="card-body">
-            <div class="text-center p-3">
-              <h5 class="card-title">Standard</h5>
-              <small>Small Business</small>
-              <br><br>
-              <span class="h2">$20</span>/month 
-              <br><br>
+            <div class="generic_feature_list">
+              <ul>
+                <li><span>1</span> Server / user</li>
+                <li><span>Unlimited</span> Users</li>
+                <li><span>24/7</span> Support</li>
+              </ul>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <input id="priceValue" type="text" class="form-control" placeholder="Resources" aria-label="Resources">
-          <input id="priceRange" type="range" class="form-range" min="1" max="10001" step="5">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Cras justo odio</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Dapibus ac facilisis in</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Vestibulum at eros</li>
-          </ul>
-          <div class="d-grid my-3">
-            <button class="btn btn-outline-dark btn-block">Select</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="card h-100 shadow-lg">
-          <div class="card-body">
-            <div class="text-center p-3">
-              <h5 class="card-title">Premium</h5>
-              <small>Large Companies</small>
-              <br><br>
-              <span class="h2">$40</span>/month
-              <br><br>
+            <div class="generic_price_btn clearfix">
+              <a href="https://account.meteor2.io/register" target="_blank" style="width:200px">Sign Up</a>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Cras justo odio</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Dapibus ac facilisis in</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-            </svg> Vestibulum at eros</li>
-          </ul>
-          <div class="d-grid my-3">
-            <button class="btn btn-outline-dark btn-block">Select</button>
-          </div>
+          </div>                
         </div>
-      </div>
-    </div>    
-  </div>
-
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h6 class="card-title text-muted text-uppercase text-center"><span id="price">0€</span><span id="period" class="period">/month</span></h6>
-            <h6 class="card-price text-center" id="subprice">And always will be free</h6>
-            <hr>
-            <input id="priceValue" type="text" class="form-control" placeholder="Resources" aria-label="Resources">
-            <input id="priceRange" type="range" class="form-range" min="1" max="10001" step="5">
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-              <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited
-                Private Projects</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated
-                Phone Support</li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain
-              </li>
-              <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
-                Reports</li>
-            </ul>
-            <div class="d-grid">
-              <a href="#" class="btn btn-primary text-uppercase">Button</a>
+        <div class="col-md-4" style="transform:scale(1.02, 1.02)">
+          <div class="generic_content active clearfix" style="border-radius: 10px">
+            <div class="generic_head_price clearfix">
+              <div class="generic_head_content clearfix">
+                <div class="head_bg"></div>
+                <div class="head">
+                  <span>Organization</span>
+                </div>
+              </div>
+              <div class="generic_price_tag clearfix">  
+                <span class="price">
+                  <span class="sign">$</span>
+                  <span id="currency" class="currency"></span>
+                  <span id="cent" class="cent"></span>
+                  <span class="month">/Month</span>
+                </span>
+              </div>
+            </div>
+            <div style="padding-left: 40px; padding-right: 40px">
+              <label style="margin-bottom:10px">Enter the amount of servers</label>
+              <input id="priceInput" pattern="[0-9]*" class="form-control" style="width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 10px;">
+              <input id="priceRange" type="range" class="form-range" min="5" max="1000">
+              <label style="margin-bottom:20px">Avg. <span style="font-weight: 600">$<span id="priceAvg"></span></span> per server.</label>
+            </div>
+            <div class="generic_feature_list">
+              <ul>
+                <li><span id="numberServers">5</span> Servers / user</li>
+                <li><span>Unlimited</span> Users</li>
+                <li><span>24/7</span> Support</li>
+              </ul>
+            </div>
+            <div class="generic_price_btn clearfix">
+              <a href="https://account.meteor2.io/register" target="_blank" style="width:300px">Sign Up</a>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-md-4">
+          <div class="generic_content clearfix" style="border-radius: 10px">
+            <div class="generic_head_price clearfix">
+              <div class="generic_head_content clearfix">
+                <div class="head_bg"></div>
+                <div class="head">
+                  <span>Enterprise</span>
+                </div>
+              </div>
+              <div class="generic_price_tag clearfix">  
+                <span class="price">
+                  <span class="currency" style="font-size:40px">Let's chat</span>
+                </span>
+              </div>
+            </div>
+            <div>Bla bla blahh</div>
+            <div class="generic_price_btn clearfix">
+              <a href="mailto:sales@meteor2.io" target="_blank" style="width:200px">Email Us</a>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
-  </div> -->
+  </div>
   <!-- FOOTER -->
   <footer style="height:98px; padding-top:20px; padding-bottom: 20px; background-color: #282A35">
     <div style="text-align: center">
@@ -229,33 +165,46 @@
     mediumZoom('[zoom]', { background: '#282A35' })
     AOS.init();
     // Calculate pricing
+    calculatePrice(5)
     document.getElementById("priceRange").oninput = function() {
       calculatePrice(this.value)
     }
-    document.getElementById("priceValue").oninput = function() {
+    document.getElementById("priceInput").oninput = function() {
       calculatePrice(this.value)
     }
-    
     function calculatePrice(value) {
-      let priceValue = document.getElementById("priceValue")
+      // Get Components
+      let priceInput = document.getElementById("priceInput")
       let priceRange = document.getElementById("priceRange")
-      let subprice = document.getElementById("subprice")
-      let period = document.getElementById("period")
-      if (value == 1) {
-        period.innerHTML = ''
-        price.innerHTML = 'Free'
-        subprice.innerHTML = 'And always will be free'
-      }
-      else if (value == 10000) {
+      let priceAvg = document.getElementById("priceAvg")
+      let numberServers = document.getElementById("numberServers")
+      let currency = document.getElementById("currency")
+      let cent = document.getElementById("cent")
+      
+      // Init pricing
+      const max_price_x_server = 4
+      const max_price_reduction = 2.5
+      const max_servers = 1000
 
+      // Calculate Servers Count
+      if (value.length == 0) return
+      value = parseInt(value)
+      if (value > max_servers) value = max_servers
+
+      // Calculate Servers Pricing
+      let price_x_server = max_price_x_server
+      if (value > 50) price_x_server = max_price_x_server - (((max_price_x_server - max_price_reduction) / max_servers) * value)
+      const price = price_x_server * value
+
+      // Assign components values
+      if (value >= 5) {
+        priceInput.value = value
+        priceRange.value = value
+        priceAvg.innerHTML = parseFloat(price_x_server).toFixed(2)
+        currency.innerHTML = Math.trunc(price)
+        cent.innerHTML = ('.' + Math.trunc((price - Math.trunc(price)) * 100) + '0').substring(0,3)
+        numberServers.innerHTML = value
       }
-      else {
-        period.innerHTML = ' / Month'
-        price.innerHTML = value
-        subprice.innerHTML = 'Local taxes may be applicable'
-      }
-      priceValue.value = value
-      priceRange.value = value
     }
   </script>
 </body>
