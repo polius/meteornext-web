@@ -51,11 +51,11 @@ body {
   color: #fff;
   opacity: 1!important;
 }
-.show {
+.show-top-button {
   opacity: 0.8!important;
   transition: opacity 500ms;
 }
-.hide {
+.hide-top-button {
   opacity: 0!important;
   transition: opacity 500ms;
 }

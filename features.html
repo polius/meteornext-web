@@ -337,12 +337,12 @@
     var scrollButton = document.getElementById("scrollButton")
     window.onscroll = function() {
       if (document.documentElement.scrollTop || document.body.scrollTop > 500) {
-        scrollButton.classList.add('show')
-        scrollButton.classList.remove('hide')
+        scrollButton.classList.add('show-top-button')
+        scrollButton.classList.remove('hide-top-button')
       }
       else {
-        scrollButton.classList.add('hide')
-        scrollButton.classList.remove('show')
+        scrollButton.classList.add('hide-top-button')
+        scrollButton.classList.remove('show-top-button')
       }
     }
   </script>
