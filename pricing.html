@@ -21,7 +21,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:1.5rem; z-index:1">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:1.5rem; z-index:2">
           <ul class="navbar-nav" style="width:100%; align-items:center; padding-left:20px">
             <li class="nav-item">
               <a class="home nav-link active" aria-current="page" href="./features.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Features</a>
@@ -160,6 +160,8 @@
     </div>
     <div style="margin-top:15px; width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
   </footer>
+  <!-- BACK TO TOP -->
+  <a href="#" id="scrollButton" class="scrollUpButton" onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i class="fas fa-angle-up"></i></a>
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
@@ -169,6 +171,18 @@
     document.getElementById("year").innerHTML = new Date().getFullYear();
     mediumZoom('[zoom]', { background: '#282A35' })
     AOS.init();
+    // Scroll
+    var scrollButton = document.getElementById("scrollButton")
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop || document.body.scrollTop > 500) {
+        scrollButton.classList.add('show-top-button')
+        scrollButton.classList.remove('hide-top-button')
+      }
+      else {
+        scrollButton.classList.add('hide-top-button')
+        scrollButton.classList.remove('show-top-button')
+      }
+    }
     // Calculate pricing
     calculatePrice(5)
     document.getElementById("priceRange").oninput = function() {
