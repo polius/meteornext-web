@@ -101,7 +101,7 @@
       <a href="features.html#deployments" style="text-decoration: none">
         <h1 style="background-color:#ff7070; color:#183153; font-size:42px; font-weight:600; text-align: center; padding-bottom:30px; padding-top:25px; margin-bottom:40px"><i class="fas fa-meteor" style="margin-right:15px"></i>Deployments</h1>
       </a>
-      <div class="container" style="max-width:1500px">
+      <div class="container" style="max-width:min(90%,2000px); padding:0px; padding-bottom:20px">
         <div class="row align-items-center">
           <div class="col-xs-5 col-md-5 first" style="text-align:center; padding-left:20px; padding-right:20px">
             <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="left" style="color:#f0f1f3; font-size:38px; font-weight:600">All your deployments centralized in one place</h2>
@@ -161,7 +161,7 @@
       <a href="features.html#monitoring" style="text-decoration: none">
         <h1 style="color:#183153; background-color:#ff9a57; font-size:42px; font-weight:600; text-align: center; padding-bottom:30px; padding-top:25px; margin-bottom:40px"><i class="fas fa-desktop" style="margin-right:15px"></i>Monitoring</h1>
       </a>
-      <div class="container" style="max-width:1500px">
+      <div class="container" style="max-width:min(90%,2000px); padding:0px">
         <div class="row align-items-center">
           <div class="col-xs-5 col-md-5 first" style="text-align:center; padding-left:20px; padding-right:20px">
             <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="left" style="color:#f0f1f3; font-size:38px; font-weight:600">All your servers centralized in one place</h2>
@@ -210,7 +210,7 @@
       <a href="features.html#utils" style="text-decoration: none">
         <h1 style="color:#183153; background-color:#00b894; font-size:42px; font-weight:600; text-align: center; padding-bottom:30px; padding-top:25px; margin-bottom:40px"><i class="fas fa-database" style="margin-right:15px"></i>Utils</h1>
       </a>
-      <div class="container" style="max-width:1500px; padding-bottom:20px">
+      <div class="container" style="max-width:min(90%,2000px); padding:0px; padding-bottom:20px">
         <div class="row align-items-center">
           <div class="col-xs-5 col-md-5 first" style="text-align:center; padding-left:20px; padding-right:20px">
             <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="left" style="color:#f0f1f3; font-size:38px; font-weight:600">Import SQL files in a fly</h2>
@@ -252,7 +252,7 @@
       <a href="features.html#client" style="text-decoration: none">
         <h1 style="color:#183153; background-color:#a16aba; font-size:42px; font-weight:600; text-align: center; padding-bottom:30px; padding-top:25px; margin-bottom:40px"><i class="fas fa-bolt" style="margin-right:15px"></i>Client</h1>
       </a>
-      <div class="container" style="max-width:1500px">
+      <div class="container" style="max-width:min(90%,2000px); padding:0px">
         <div class="row align-items-center">
           <div class="col-xs-5 col-md-5 first" style="text-align:center; padding-left:20px; padding-right:20px">
             <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="left" style="color:#f0f1f3; font-size:38px; font-weight:600">A complete MySQL client</h2>
@@ -336,7 +336,7 @@
     // Scroll
     var scrollButton = document.getElementById("scrollButton")
     window.onscroll = function() {
-      if (document.documentElement.scrollTop || document.body.scrollTop > 500) {
+      if ((document.documentElement.scrollTop || document.body.scrollTop) > 500) {
         scrollButton.classList.add('show-top-button')
         scrollButton.classList.remove('hide-top-button')
       }

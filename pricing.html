@@ -174,7 +174,7 @@
     // Scroll
     var scrollButton = document.getElementById("scrollButton")
     window.onscroll = function() {
-      if (document.documentElement.scrollTop || document.body.scrollTop > 500) {
+      if ((document.documentElement.scrollTop || document.body.scrollTop) > 500) {
         scrollButton.classList.add('show-top-button')
         scrollButton.classList.remove('hide-top-button')
       }
