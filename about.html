@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <main style="flex:1">
@@ -47,8 +48,21 @@
     </div>
     <!-- ABOUT -->
     <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
-      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:48px; font-weight:600; margin-bottom:40px">About</h1>
-      <!-- <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:20px">Pay only for the resources you need. Nothing more, nothing less.</div> -->
+      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:44px; font-weight:600; margin-bottom:40px">About</h1>
+    </div>
+    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:16px; color: #adbac7; line-height: 1.7; padding-left:15px; padding-right:15px">
+      <div style="color:#c3c6d1; margin-top:40px; font-size:23px; font-weight: 500; border-bottom: 0.5px solid">Who are we?</div>
+      <p style="margin-top:30px"></p>
+    </div>
+    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:16px; color: #adbac7; line-height: 1.7; padding-left:15px; padding-right:15px; margin-bottom:40px">
+      <div style="color:#c3c6d1; margin-top:40px; font-size:23px; font-weight: 500; border-bottom: 0.5px solid">Why using Meteor Next?</div>
+      <p style="margin-top:30px">As Database Engineers, we spend a lot of time managing all the data infrastructure, and it can be hard to find relevant products that helps us with our daily needs. Most of the time we're coding scripts to automatize some repeating operations.</p>
+      <p>This is what happened me when I started working as a Database Engineer in my last job. I had to start performing some concurrent tasks such as massive and dangerous SQL deployments on each Release, monitor some metrics in hundreds of database servers and to manage all the database user's accounts.</p>
+      <p>At first, when I started working on this position, I only had a MySQL client and some legacy scripts to perform all those sql deployments.</p>
+      <p>I started digging in the net hoping to find a competent app that could aid me to perform all these repeated tasks in a secured and automated way. All I found was multiple applications, one to perform deployments, another one to manage all the database servers inventory, another to perform active monitoring and another one to give me access to all the servers (a MySQL Client).</p>
+      <p>Most of these applications I found were useful, but in some cases I had to continue write python scripts to solve corner cases that those apps could not fulfill.</p>
+      <p>At this point I thought, "why not building a multiplatform web app that could automatize all those concurrent database operations that every company need to handle?"</p>
+      <p>After three years designing and coding this application in my free time, today the company where I work has all the database infrastructure automated and secured. Now I don't have to think about all those daily tasks. Everything works as it should. Developers also have access to this app (with limited access) and most of the tasks now can be done without the need of being reviewed by the Data Engineer.</p>
     </div>
   </main>
   <!-- FOOTER -->
@@ -62,14 +76,23 @@
     </div>
     <div style="margin-top:15px; width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
   </footer>
+  <!-- BACK TO TOP -->
+  <a href="#" id="scrollButton" class="scrollUpButton" onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i class="fas fa-angle-up"></i></a>
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   <script src="js/medium-zoom.min.js"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
     mediumZoom('[zoom]', { background: '#282A35' })
     AOS.init();
+    // Scroll
+    var scrollButton = document.getElementById("scrollButton")
+    window.onscroll = function() {
+      if ((document.documentElement.scrollTop || document.body.scrollTop) > 200) scrollButton.classList.add('show')
+      else scrollButton.classList.remove('show')
+    }
   </script>
 </body>
 </html>

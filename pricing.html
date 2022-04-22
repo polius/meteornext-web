@@ -49,7 +49,7 @@
     </div>
     <!-- PRICING -->
     <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
-      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:48px; font-weight:600; margin-bottom:40px">Pricing</h1>
+      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:44px; font-weight:600; margin-bottom:40px">Pricing</h1>
       <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:21px">Pay only for the resources you need. Nothing more, nothing less.</div>
     </div>
     <div id="generic_price_table">
@@ -176,14 +176,8 @@
     // Scroll
     var scrollButton = document.getElementById("scrollButton")
     window.onscroll = function() {
-      if ((document.documentElement.scrollTop || document.body.scrollTop) > 500) {
-        scrollButton.classList.add('show-top-button')
-        scrollButton.classList.remove('hide-top-button')
-      }
-      else {
-        scrollButton.classList.add('hide-top-button')
-        scrollButton.classList.remove('show-top-button')
-      }
+      if ((document.documentElement.scrollTop || document.body.scrollTop) > 200) scrollButton.classList.add('show')
+      else scrollButton.classList.remove('show')
     }
     // Calculate pricing
     calculatePrice(5)
