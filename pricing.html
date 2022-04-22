@@ -13,142 +13,144 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <div style="background-color: #282A35; padding-left:15px; padding-right:15px">
+  <main style="flex:1">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="max-width:1300px; margin-left:auto!important; margin-right:auto!important; padding-top:20px; padding-bottom:20px">
-      <div class="container-fluid" style="padding-left:20px; padding-right:20px; height:80px">
-        <a class="navbar-brand" href="index.html" style="height:100%; font-size:24px; margin-right:auto; display: flex; align-items: center;"><img class="icon" src="assets/logo.png" width="50" height="50" style="margin-right:15px; margin-bottom:4px;">Meteor Next</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:1.5rem; z-index:2">
-          <ul class="navbar-nav" style="width:100%; align-items:center; padding-left:20px">
-            <li class="nav-item">
-              <a class="home nav-link active" aria-current="page" href="./features.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="home nav-link active" aria-current="page" href="./pricing.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="home nav-link active" aria-current="page" href="./about.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="home nav-link active" href="https://docs.meteor2.io" target="_blank" style="font-size:18px; padding-left:1.5rem">Docs</a>
-            </li>
-            <li class="nav-item" style="margin-left:auto">
-              <a class="nav-link active" href="https://account.meteor2.io/register" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Sign up</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://account.meteor2.io/login" class="btn btn-primary btn-lg btn-signin" style="border-radius:25px; font-size:18px; padding-left:20px; padding-right:20px" tabindex="-1" role="button">Sign in</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- PRICING -->
-  <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
-    <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:48px; font-weight:600; margin-bottom:40px">Pricing</h1>
-    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:20px">Pay only for the resources you need. Nothing more, nothing less.</div>
-  </div>
-  <div id="generic_price_table">
-    <div class="container p-4" style="padding-bottom:0px!important">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="generic_content clearfix" style="border-radius: 10px">                
-            <div class="generic_head_price clearfix">
-              <div class="generic_head_content clearfix">
-                <div class="head_bg"></div>
-                <div class="head">
-                  <span>Individual</span>
-                </div>
-              </div>
-              <div class="generic_price_tag clearfix">  
-                <span class="price">
-                  <span class="currency" style="font-size: 40px;">Free</span>
-                  <span class="month" style="margin-left:10px">forever</span>
-                </span>
-              </div>
-            </div>
-            <div class="generic_feature_list">
-              <ul>
-                <li><span>1</span> Server per user</li>
-                <li><span>Unlimited</span> Users</li>
-                <li><span>24/7</span> Support</li>
-              </ul>
-            </div>
-            <div class="generic_price_btn clearfix">
-              <a href="https://account.meteor2.io/register" target="_blank" style="width:200px">Sign Up</a>
-            </div>
-          </div>                
-        </div>
-        <div class="col-md-4" style="transform:scale(1.02, 1.02)">
-          <div class="generic_content active clearfix" style="border-radius: 10px">
-            <div class="generic_head_price clearfix">
-              <div class="generic_head_content clearfix">
-                <div class="head_bg"></div>
-                <div class="head">
-                  <span>Organization</span>
-                </div>
-              </div>
-              <div class="generic_price_tag clearfix">  
-                <span class="price">
-                  <span class="sign">$</span>
-                  <span id="currency" class="currency"></span>
-                  <span id="cent" class="cent"></span>
-                  <span class="month" style="margin-left:2px">/Month</span>
-                </span>
-              </div>
-            </div>
-            <div style="padding-left: 40px; padding-right: 40px">
-              <label style="margin-bottom:15px">Enter the amount of servers</label>
-              <input id="priceInput" pattern="[0-9]*" class="form-control" style="width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 12px; background-color: #f6f6f6;">
-              <input id="priceRange" type="range" class="form-range" min="5" max="1000">
-              <label style="margin-top:5px">Avg. <span style="font-weight: 500">$<span id="priceAvg"></span></span> per server.</label>
-            </div>
-            <div style="height:1px; width:90%; margin-left:auto; margin-right:auto; background-color: #e6e6e6; margin-top:20px; margin-bottom:10px"></div>
-            <div class="generic_feature_list">
-              <ul>
-                <li><span id="numberServers">5</span> Servers per user</li>
-                <li><span>Unlimited</span> Users</li>
-                <li><span>24/7</span> Support</li>
-              </ul>
-            </div>
-            <div class="generic_price_btn clearfix">
-              <a href="https://account.meteor2.io/register" target="_blank" style="width:min(90%, 300px)">Sign Up</a>
-            </div>
+    <div style="padding-left:15px; padding-right:15px">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="max-width:1300px; margin-left:auto!important; margin-right:auto!important; padding-top:20px; padding-bottom:20px">
+        <div class="container-fluid" style="padding-left:20px; padding-right:20px; height:80px">
+          <a class="navbar-brand" href="index.html" style="height:100%; font-size:24px; margin-right:auto; display: flex; align-items: center;"><img class="icon" src="assets/logo.png" width="50" height="50" style="margin-right:15px; margin-bottom:4px;">Meteor Next</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:1.5rem; z-index:2">
+            <ul class="navbar-nav" style="width:100%; align-items:center; padding-left:20px">
+              <li class="nav-item">
+                <a class="home nav-link active" aria-current="page" href="./features.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="home nav-link active" aria-current="page" href="./pricing.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="home nav-link active" aria-current="page" href="./about.html" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="home nav-link active" href="https://docs.meteor2.io" target="_blank" style="font-size:18px; padding-left:1.5rem">Docs</a>
+              </li>
+              <li class="nav-item" style="margin-left:auto">
+                <a class="nav-link active" href="https://account.meteor2.io/register" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://account.meteor2.io/login" class="btn btn-primary btn-lg btn-signin" style="border-radius:25px; font-size:18px; padding-left:20px; padding-right:20px" tabindex="-1" role="button">Sign in</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="generic_content clearfix" style="border-radius: 10px">
-            <div class="generic_head_price clearfix">
-              <div class="generic_head_content clearfix">
-                <div class="head_bg"></div>
-                <div class="head">
-                  <span>Enterprise</span>
-                </div>
-              </div>
-              <div class="generic_price_tag clearfix">  
-                <span class="price">
-                  <span class="currency" style="font-size:40px">Let's chat</span>
-                </span>
-              </div>
-            </div>
-            <div class="generic_feature_list">
-              <ul>
-                <li><span>+1000</span> Servers per user</li>
-                <li><span>Unlimited</span> Users</li>
-                <li><span>24/7</span> Support</li>
-              </ul>
-            </div>
-            <div class="generic_price_btn clearfix">
-              <a href="mailto:sales@meteor2.io" target="_blank" style="width:200px">Email Us</a>
-            </div>
-          </div>
-        </div>
-      </div>  
+      </nav>
     </div>
-  </div>
+    <!-- PRICING -->
+    <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
+      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:48px; font-weight:600; margin-bottom:40px">Pricing</h1>
+      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:20px">Pay only for the resources you need. Nothing more, nothing less.</div>
+    </div>
+    <div id="generic_price_table">
+      <div class="container p-4" style="padding-bottom:0px!important">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="generic_content clearfix" style="border-radius: 10px">                
+              <div class="generic_head_price clearfix">
+                <div class="generic_head_content clearfix">
+                  <div class="head_bg"></div>
+                  <div class="head">
+                    <span>Individual</span>
+                  </div>
+                </div>
+                <div class="generic_price_tag clearfix">  
+                  <span class="price">
+                    <span class="currency" style="font-size: 40px;">Free</span>
+                    <span class="month" style="margin-left:10px">forever</span>
+                  </span>
+                </div>
+              </div>
+              <div class="generic_feature_list">
+                <ul>
+                  <li><span>1</span> Server per user</li>
+                  <li><span>Unlimited</span> Users</li>
+                  <li><span>24/7</span> Support</li>
+                </ul>
+              </div>
+              <div class="generic_price_btn clearfix">
+                <a href="https://account.meteor2.io/register" target="_blank" style="width:200px">Sign Up</a>
+              </div>
+            </div>                
+          </div>
+          <div class="col-md-4" style="transform:scale(1.02, 1.02)">
+            <div class="generic_content active clearfix" style="border-radius: 10px">
+              <div class="generic_head_price clearfix">
+                <div class="generic_head_content clearfix">
+                  <div class="head_bg"></div>
+                  <div class="head">
+                    <span>Organization</span>
+                  </div>
+                </div>
+                <div class="generic_price_tag clearfix">  
+                  <span class="price">
+                    <span class="sign">$</span>
+                    <span id="currency" class="currency"></span>
+                    <span id="cent" class="cent"></span>
+                    <span class="month" style="margin-left:2px">/Month</span>
+                  </span>
+                </div>
+              </div>
+              <div style="padding-left: 40px; padding-right: 40px">
+                <label style="margin-bottom:15px">Enter the amount of servers</label>
+                <input id="priceInput" pattern="[0-9]*" class="form-control" style="width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 12px; background-color: #f6f6f6;">
+                <input id="priceRange" type="range" class="form-range" min="5" max="1000">
+                <label style="margin-top:5px">Avg. <span style="font-weight: 500">$<span id="priceAvg"></span></span> per server.</label>
+              </div>
+              <div style="height:1px; width:90%; margin-left:auto; margin-right:auto; background-color: #e6e6e6; margin-top:20px; margin-bottom:10px"></div>
+              <div class="generic_feature_list">
+                <ul>
+                  <li><span id="numberServers">5</span> Servers per user</li>
+                  <li><span>Unlimited</span> Users</li>
+                  <li><span>24/7</span> Support</li>
+                </ul>
+              </div>
+              <div class="generic_price_btn clearfix">
+                <a href="https://account.meteor2.io/register" target="_blank" style="width:min(90%, 300px)">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="generic_content clearfix" style="border-radius: 10px">
+              <div class="generic_head_price clearfix">
+                <div class="generic_head_content clearfix">
+                  <div class="head_bg"></div>
+                  <div class="head">
+                    <span>Enterprise</span>
+                  </div>
+                </div>
+                <div class="generic_price_tag clearfix">  
+                  <span class="price">
+                    <span class="currency" style="font-size:40px">Let's chat</span>
+                  </span>
+                </div>
+              </div>
+              <div class="generic_feature_list">
+                <ul>
+                  <li><span>+1000</span> Servers per user</li>
+                  <li><span>Unlimited</span> Users</li>
+                  <li><span>24/7</span> Support</li>
+                </ul>
+              </div>
+              <div class="generic_price_btn clearfix">
+                <a href="mailto:sales@meteor2.io" target="_blank" style="width:200px">Email Us</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </main>
   <!-- FOOTER -->
   <footer style="height:98px; padding-top:20px; padding-bottom: 20px; background-color: #2e303d">
     <div style="text-align: center">
