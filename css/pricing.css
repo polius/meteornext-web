@@ -146,7 +146,7 @@
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
   font-family: "Raleway",sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 3px;
   vertical-align: bottom;
 }
@@ -186,6 +186,7 @@
   display: inline-block;
   font-family: "Raleway",sans-serif;
   font-size: 18px;
+  font-weight: 500;
   outline: medium none;
   padding: 12px 30px;
   text-decoration: none;
