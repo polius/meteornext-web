@@ -197,8 +197,8 @@
       let cent = document.getElementById("cent")
       
       // Init pricing
-      const max_price_x_server = 4
-      const max_price_reduction = 3
+      const max_price_x_server = 3
+      const max_price_reduction = 2.5
       const max_servers = 1000
 
       // Calculate Servers Count
@@ -208,7 +208,7 @@
 
       // Calculate Servers Pricing
       let price_x_server = max_price_x_server
-      if (value > 50) price_x_server = max_price_x_server - (((max_price_x_server - max_price_reduction) / max_servers) * value)
+      if (value > 10) price_x_server = max_price_x_server - (((max_price_x_server - max_price_reduction) / max_servers) * value)
       const price = price_x_server * value
 
       // Assign components values
