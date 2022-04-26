@@ -6,69 +6,82 @@
 }
 
 #generic_price_table .generic_content{
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+  /* background-color: rgb(44, 48, 50); */
+  background-color: rgb(41, 45, 46);
 }
 
 #generic_price_table .generic_content .generic_head_price{
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
+  /* background-color: rgb(57, 62, 65); */
+  background-color: rgb(53, 57, 60);
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
-  border-color: #8ce6b1 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #8ce6b1;
+  /* border-color: #8ce6b1 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #8ce6b1; */
+  border-color: rgb(40, 176, 97) rgba(210, 195, 173, 0) rgba(210, 195, 173, 0) rgb(40, 176, 97)
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
-  color: #212529;
+  /* color: #212529; */
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
-  color: #414141;
+  /* color: #414141; */
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
-  color: #414141;
+  /* color: #414141; */
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
-  color: #414141;
+  /* color: #414141; */
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
-  color: #414141;
+  /* color: #414141; */
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content .generic_feature_list ul li{  
-  color: #949494;
+  /* color: #949494; */
+  color: #f6ecda;
 }
 
 #generic_price_table .generic_content .generic_feature_list ul li span{
-  color: #414141;
+  /* color: #414141; */
+  color: #f6f6f6;
 }
 #generic_price_table .generic_content .generic_feature_list ul li:hover{
-  background-color: #E4E4E4;
+  /* background-color: #E4E4E4; */
+  background-color: rgb(59, 65, 66);
   border-left: 5px solid #2ECC71;
 }
 
 #generic_price_table .generic_content .generic_price_btn a{
-  border: 1px solid #2ECC71; 
-  color: #2ECC71;
+  border: 1px solid rgb(40, 176, 97);
+  color: rgb(40, 176, 97);
 } 
 
 #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
   border-color: #2ECC71 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #2ECC71;
-  color: #fff;
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
 #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
-  color: #fff;
+  color: #f6f6f6;
 }
 
 #generic_price_table .generic_content:hover .generic_price_btn a,
 #generic_price_table .generic_content.active .generic_price_btn a{
-  background-color: #2ECC71;
-  color: #fff;
+  background-color: rgb(40, 176, 97);
+  color: #f6f6f6;
 } 
 .row .table{
   padding: 28px 0;
@@ -231,4 +244,8 @@
   #generic_price_table .generic_content{
     margin-bottom:30px;
   }
+}
+
+.form-range::-moz-range-track {
+  background-color: rgb(57, 62, 65);
 }
