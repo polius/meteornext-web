@@ -47,6 +47,10 @@
   color: #f6f6f6;
 }
 
+#generic_price_table .generic_content .generic_feature_list {  
+  padding-top: 20px;
+}
+
 #generic_price_table .generic_content .generic_feature_list ul li{  
   /* color: #949494; */
   color: #f6ecda;
@@ -91,10 +95,6 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-}
-
-#generic_price_table .generic_content .generic_head_price {
-  margin: 0 0 20px 0;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content{
@@ -187,7 +187,7 @@
   padding: 0 10px;
 }
 #generic_price_table .generic_content .generic_price_btn{
-  margin: 20px 0 32px;
+  padding: 20px 0 32px;
 }
 
 #generic_price_table .generic_content .generic_price_btn a{
@@ -247,5 +247,8 @@
 }
 
 .form-range::-moz-range-track {
+  background-color: rgb(57, 62, 65);
+}
+.form-range::-webkit-slider-runnable-track {
   background-color: rgb(57, 62, 65);
 }
