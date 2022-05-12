@@ -6,11 +6,11 @@
 }
 
 #generic_price_table .generic_content{
-  background-color: #292c36;
+  background-color: #393d4d;
 }
 
 #generic_price_table .generic_content .generic_head_price{  
-  background-color: #393d4d;
+  background-color: #43485c;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
@@ -219,8 +219,8 @@
 }
 
 .form-range::-moz-range-track {
-  background-color: #393d4d;
+  background-color: #43485c;
 }
 .form-range::-webkit-slider-runnable-track {
-  background-color: #393d4d;
+  background-color: #43485c;
 }
