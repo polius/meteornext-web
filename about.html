@@ -13,10 +13,10 @@
 </head>
 <body>
   <main style="flex:1">
-    <!-- NAVIGATION -->
-    <div style="padding-left:15px; padding-right:15px">
+    <div style="padding-left:15px; padding-right:15px; padding-bottom:40px; background-image:url('https://meteor2.io/assets/bg.png'); background-repeat: no-repeat; background-size: cover">
+      <!-- NAVIGATION -->
       <nav class="navbar navbar-expand-lg navbar-dark" style="max-width:1300px; margin-left:auto!important; margin-right:auto!important; padding-top:20px; padding-bottom:20px">
-        <div class="container-fluid" style="background-color:#3d3d50; padding-left:20px; padding-right:20px; height:80px">
+        <div class="container-fluid" style="background-color:rgba(61, 61, 80, 0.75); padding-left:20px; padding-right:20px; height:80px">
           <a class="navbar-brand" href="index.html" style="height:100%; font-size:24px; margin-right:auto; display: flex; align-items: center;"><img class="icon" src="assets/logo.png" width="50" height="50" style="margin-right:15px; margin-bottom:4px;">Meteor Next</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,28 +45,30 @@
           </div>
         </div>
       </nav>
-    </div>
-    <!-- ABOUT -->
-    <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
-      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:44px; font-weight:600; margin-bottom:40px">About</h1>
-    </div>
-    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:15.5px; color: #adbac7; line-height: 1.7; padding-left:15px; padding-right:15px">
-      <div style="color:#c3c6d1; margin-top:40px; font-size:21px; font-weight: 500">Who makes Meteor Next?</div>
-      <p style="margin-top:25px">
-        Meteor Next is being designed, developed and maintained by <a href="https://es.linkedin.com/in/polalzina" target="_blank" style="text-decoration:none; color:#fff">Pol Alzina</a>, a database engineer specialized in managing MySQL databases and everything that surrounds it using Amazon Web Services.
-      </p>
-    </div>
-    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:15.5px; color: #adbac7; line-height: 1.7; padding-left:15px; padding-right:15px; margin-bottom:40px">
-      <div style="color:#c3c6d1; margin-top:40px; font-size:21px; font-weight: 500">Why using Meteor Next?</div>
-      <p style="margin-top:25px">As Database Engineers, we spend a lot of time managing all the data infrastructure, and it can be hard to find relevant products that helps us with our daily needs. Most of the time we're coding scripts to automatize some repeating operations.</p>
-      <p>This is what happened me when I started working as a Database Engineer in my last job position. I had to start performing some concurrent tasks such as massive and dangerous SQL deployments on each Release, monitor some metrics in hundreds of database servers and also manage all the database user's accounts.</p>
-      <p>At first, when I started working on this position, I only had a MySQL client and some legacy scripts to perform all those sql deployments.</p>
-      <p>I started digging in the net hoping to find a competent app that could aid me to perform all these repeated tasks in a secured and automated way. All I found was multiple applications, one to perform deployments, another one to manage all the database servers inventory, another to perform active monitoring and another one to give me access to all the servers (a MySQL Client).</p>
-      <p>Most of these applications I found were useful, but in some cases I had to continue write python scripts to solve corner cases that those apps could not fulfill.</p>
-      <p>At this point I thought, "why not building a multiplatform web app that could automatize all those concurrent database operations that every company need to handle?"</p>
-      <p>After four years designing and coding this application in my free time, today the company where I work has all the database infrastructure automated and secured. Now I don't have to think about all those daily tasks. Everything works as it should. Developers also have their accounts with their set of privileges and most of the tasks now can be done without the need of being reviewed by the Data Engineer.</p>
-      <p>Developers are happy and the boring stuff Is now fully automated. I can say that all the time I spent developing this application was worth it.</p>
-      <p>Now it's time to share this project with everyone and I hope you can find it useful.</p>
+      <!-- ABOUT -->
+      <div style="margin-left:auto; margin-right:auto; margin-top:min(40px, 5%)">
+        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#393d4d; font-size:44px; font-weight:600; margin-bottom:40px">About</h1>
+      </div>
+      <div class="container" style="background-color: rgba(61, 61, 80, 0.75); border-radius:8px; padding-top:25px; padding-bottom:5px">
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:15.5px; color: #c3c6d1; line-height: 1.7">
+          <div style="color:#f0f1f3; font-size:21px; font-weight:500">Who makes Meteor Next?</div>
+          <p style="margin-top:25px">
+            Meteor Next is being designed, developed and maintained by <a href="https://es.linkedin.com/in/polalzina" target="_blank" style="text-decoration:none; color:#f0f1f3">Pol Alzina</a>, a database engineer specialized in managing MySQL databases and everything that surrounds it using Amazon Web Services.
+          </p>
+        </div>
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:15.5px; color: #c3c6d1; line-height: 1.7">
+          <div style="color:#f0f1f3; margin-top:30px; font-size:21px; font-weight:500">Why using Meteor Next?</div>
+          <p style="margin-top:25px">As Database Engineers, we spend a lot of time managing all the data infrastructure, and it can be hard to find relevant products that helps us with our daily needs. Most of the time we're coding scripts to automatize some repeating operations.</p>
+          <p>This is what happened me when I started working as a Database Engineer in my last job position. I had to start performing some concurrent tasks such as massive and dangerous SQL deployments on each Release, monitor some metrics in hundreds of database servers and also manage all the database user's accounts.</p>
+          <p>At first, when I started working on this position, I only had a MySQL client and some legacy scripts to perform all those sql deployments.</p>
+          <p>I started digging in the net hoping to find a competent app that could aid me to perform all these repeated tasks in a secured and automated way. All I found was multiple applications, one to perform deployments, another one to manage all the database servers inventory, another to perform active monitoring and another one to give me access to all the servers (a MySQL Client).</p>
+          <p>Most of these applications I found were useful, but in some cases I had to continue write python scripts to solve corner cases that those apps could not fulfill.</p>
+          <p>At this point I thought, "why not building a multiplatform web app that could automatize all those concurrent database operations that every company need to handle?"</p>
+          <p>After four years designing and coding this application in my free time, today the company where I work has all the database infrastructure automated and secured. Now I don't have to think about all those daily tasks. Everything works as it should. Developers also have their accounts with their set of privileges and most of the tasks now can be done without the need of being reviewed by the Data Engineer.</p>
+          <p>Developers are happy and the boring stuff Is now fully automated. I can say that all the time I spent developing this application was worth it.</p>
+          <p>Now it's time to share this project with everyone and I hope you can find it useful.</p>
+        </div>
+      </div>
     </div>
   </main>
   <!-- FOOTER -->

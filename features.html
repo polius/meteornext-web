@@ -13,10 +13,10 @@
 </head>
 <body>
   <main style="flex:1">
-    <!-- NAVIGATION -->
-    <div style="padding-left:15px; padding-right:15px">
+    <div style="padding-left:15px; padding-right:15px; background-image:url('https://meteor2.io/assets/bg.png'); background-repeat: no-repeat; background-size: cover">
+      <!-- NAVIGATION -->
       <nav class="navbar navbar-expand-lg navbar-dark" style="max-width:1300px; margin-left:auto!important; margin-right:auto!important; padding-top:20px; padding-bottom:20px">
-        <div class="container-fluid" style="background-color:#3d3d50; padding-left:20px; padding-right:20px; height:80px">
+        <div class="container-fluid" style="background-color:rgba(61, 61, 80, 0.75); padding-left:20px; padding-right:20px; height:80px">
           <a class="navbar-brand" href="index.html" style="height:100%; font-size:24px; margin-right:auto; display: flex; align-items: center;"><img class="icon" src="assets/logo.png" width="50" height="50" style="margin-right:15px; margin-bottom:4px;">Meteor Next</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,62 +45,60 @@
           </div>
         </div>
       </nav>
-    </div>
-    <!-- SUMMARY -->
-    <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:min(40px, 5%)">
-      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#f0f1f3; font-size:44px; font-weight:600">Features</h1>
-      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#f0f1f3; margin-top:40px; margin-bottom:30px; text-align:center; font-size:21px; line-height:1.7">An all-in-one application suite to fulfill your needs</div>
-      <div class="row justify-content-center">
-        <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
-          <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#deployments" style="text-decoration: none; color:#282A35">
-            <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #ef5353">
-              <div class="card-body" style="background-color: #ff7070; height:220px; padding:1.25rem;">
-                <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-meteor" style="margin-right:10px"></i>Deployments</h5>
-                <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px;">Execute millions of SQL queries in a secured and automated way getting a detailed summary.</p>
+      <!-- SUMMARY -->
+      <div style="margin-left:auto; margin-right:auto; margin-top:min(40px, 5%); padding-bottom: 80px;">
+        <!-- f0f1f3  -->
+        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1 left" style="text-align:center; color:#393d4d; font-size:44px; font-weight:600">Features</h1>
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="left" style="color:#393d4d; margin-top:40px; margin-bottom:30px; text-align:center; font-size:21px; line-height:1.7">An all-in-one application suite to fulfill your needs</div>
+        <div class="row justify-content-center">
+          <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
+            <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#deployments" style="text-decoration: none; color:#282A35">
+              <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #ef5353">
+                <div class="card-body" style="background-color: #ff7070; height:220px; padding:1.25rem;">
+                  <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-meteor" style="margin-right:10px"></i>Deployments</h5>
+                  <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px;">Execute millions of SQL queries in a secured and automated way getting a detailed summary.</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
-          <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#monitoring" style="text-decoration: none; color:#282A35">
-            <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #fa8131">
-              <div class="card-body" style="background-color: #ff9a57; height:220px; padding:1.25rem">
-                <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-desktop" style="margin-right:10px"></i>Monitoring</h5>
-                <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px">Don't loose the track of what happens in your servers in real-time.</p>
+            </a>
+          </div>
+          <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
+            <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#monitoring" style="text-decoration: none; color:#282A35">
+              <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #fa8131">
+                <div class="card-body" style="background-color: #ff9a57; height:220px; padding:1.25rem">
+                  <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-desktop" style="margin-right:10px"></i>Monitoring</h5>
+                  <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px">Don't loose the track of what happens in your servers in real-time.</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
-          <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#utils" style="text-decoration: none; color:#282A35">
-            <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #008f73">
-              <div class="card-body" style="background-color: #00b894; height:220px; padding:1.25rem">
-                <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-database" style="margin-right:10px"></i>Utils</h5>
-                <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px">A suite of different apps to perform massive data transfer operations.</p>
+            </a>
+          </div>
+          <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
+            <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#utils" style="text-decoration: none; color:#282A35">
+              <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #008f73">
+                <div class="card-body" style="background-color: #00b894; height:220px; padding:1.25rem">
+                  <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-database" style="margin-right:10px"></i>Utils</h5>
+                  <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px">A suite of different apps to perform massive data transfer operations.</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
-          <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#client" style="text-decoration: none; color:#282A35">
-            <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #8e44ad">
-              <div class="card-body" style="background-color: #a16aba; height:220px; padding:1.25rem">
-                <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-bolt" style="margin-right:10px"></i>Client</h5>
-                <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px">A complete MySQL client to manage all your servers.</p>
+            </a>
+          </div>
+          <div class="col" style="flex: 0 0 auto; width: auto; margin-top:25px">
+            <a data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" href="features.html#client" style="text-decoration: none; color:#282A35">
+              <div class="card feature" style="cursor: pointer; margin-left:auto; margin-right:auto; width:300px; border-radius: 20px; overflow:hidden; border:0px; box-shadow: 0px 10px 0px 0px #8e44ad">
+                <div class="card-body" style="background-color: #a16aba; height:220px; padding:1.25rem">
+                  <h5 class="card-title" style="font-size:21px; font-weight:600; margin-top:10px; margin-bottom:25px"><i class="fas fa-bolt" style="margin-right:10px"></i>Client</h5>
+                  <p class="card-text" style="margin-top:10px; font-weight:500; font-size:17px">A complete MySQL client to manage all your servers.</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <svg style="background-color:#ff7070; margin-top:30px" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <path id="wavepath" d="M0,0 L110,0C35,150 35,0 0,100z" fill="#323445"></path>
-    </svg>
     <!-- DEPLOYMENTS -->
     <div style="background-color: #323445">
       <div id="deployments" style="margin-left:auto!important; margin-right:auto!important">
         <a href="features.html#deployments" style="text-decoration: none">
-          <h1 style="background-color:#ff7070; color:#183153; font-size:42px; font-weight:600; text-align: center; padding-bottom:30px; padding-top:25px; margin-bottom:40px"><i class="fas fa-meteor" style="margin-right:15px"></i>Deployments</h1>
+          <h1 style="background-color:#ff7070; color:#183153; font-size:42px; font-weight:600; text-align: center; padding-bottom:30px; padding-top:35px; margin-bottom:40px"><i class="fas fa-meteor" style="margin-right:15px"></i>Deployments</h1>
         </a>
         <div class="container" style="max-width:min(90%,2000px); padding:0px; padding-bottom:20px">
           <div class="row align-items-center">
