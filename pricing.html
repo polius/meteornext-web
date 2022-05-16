@@ -58,7 +58,7 @@
           <div class="col-md-4">
             <div class="generic_content clearfix" style="border-radius: 10px">                
               <div class="generic_head_price clearfix">
-                <div class="generic_head_content clearfix" style="background-color: #4871f7;">
+                <div class="generic_head_content clearfix" style="background-color:#0984e3">
                   <span>Individual</span>
                 </div>
                 <div class="generic_price_tag clearfix">  
@@ -83,7 +83,7 @@
           <div class="col-md-4">
             <div class="generic_content clearfix active" style="border-radius: 10px">
               <div class="generic_head_price clearfix">
-                <div class="generic_head_content clearfix" style="background-color: #019875;">
+                <div class="generic_head_content clearfix" style="background-color:#10ac84">
                   <span>Organization</span>
                 </div>
                 <div class="generic_price_tag clearfix">  
@@ -97,7 +97,7 @@
               </div>
               <div style="padding-top: 20px; padding-left: 40px; padding-right: 40px">
                 <label style="margin-bottom:15px; color:#f6f6f6;">Enter the amount of servers</label>
-                <input id="priceInput" pattern="[0-9]*" class="form-control" style="width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 12px; background-color: #43485c; border-color:rgb(72, 78, 82); color:#f6f6f6">
+                <input id="priceInput" onkeypress="isNumber(event)" class="form-control" style="width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 12px; background-color: #43485c; border-color:rgb(72, 78, 82); color:#f6f6f6">
                 <input id="priceRange" type="range" class="form-range" min="5" max="1000">
                 <label style="margin-top:5px; color:#f6f6f6">Avg. <span style="font-weight: 400; color:#fff">$<span id="priceAvg"></span></span> per server.</label>
               </div>
@@ -117,7 +117,7 @@
           <div class="col-md-4">
             <div class="generic_content clearfix" style="border-radius: 10px">
               <div class="generic_head_price clearfix">
-                <div class="generic_head_content clearfix" style="background-color: #c44d56;">
+                <div class="generic_head_content clearfix" style="background-color:#ff6b6b">
                   <span>Enterprise</span>
                 </div>
                 <div class="generic_price_tag clearfix">  
@@ -212,6 +212,11 @@
         cent.innerHTML = ('.' + Math.trunc((price - Math.trunc(price)) * 100) + '0').substring(0,3)
         numberServers.innerHTML = value
       }
+    }
+    function isNumber(event) {
+      const keysAllowed = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+      const keyPressed = event.key
+      if (!keysAllowed.includes(keyPressed) || this.resourcesSlider == 1000) event.preventDefault()
     }
   </script>
 </body>

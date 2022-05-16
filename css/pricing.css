@@ -48,35 +48,35 @@
 }
 
 #individual_signup {
-  border: 1px solid #4871f7;
-  color: #4871f7;
+  border: 1px solid #0984e3;
+  color: #0984e3;
   transition: 0.3s;
 }
 
 #individual_signup:hover {
-  background-color: #4871f7;
+  background-color: #0984e3;
   color: #f6f6f6;
 }
 
 #organization_signup {
-  border: 1px solid #019875;
-  color: #019875;
+  border: 1px solid #10ac84;
+  color: #10ac84;
   transition: 0.3s;
 }
 
 #organization_signup:hover {
-  background-color: #019875;
+  background-color: #10ac84;
   color: #f6f6f6;
 }
 
 #enterprise_signup {
-  border: 1px solid #c44d56;
-  color: #c44d56;
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
   transition: 0.3s;
 }
 
 #enterprise_signup:hover {
-  background-color: #c44d56;
+  background-color: #ff6b6b;
   color: #f6f6f6;
 }
 
