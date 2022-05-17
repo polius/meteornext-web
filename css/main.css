@@ -104,7 +104,6 @@ body {
   }
   .left{
     text-align: left!important;
-    /* color: #f0f1f3!important; */
   }
   .container-fluid {
     height:72px!important;
@@ -120,6 +119,12 @@ body {
     order: -1 !important;
   }
 }
+
+/* @media (max-width: 400px) { 
+  .left {
+    color: #f6f6f6;
+  }
+} */
 
 /*
 --gray-50: #f0f1f3;
