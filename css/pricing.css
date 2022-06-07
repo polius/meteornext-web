@@ -10,7 +10,7 @@
 }
 
 #generic_price_table .generic_content .generic_head_price{  
-  background-color: rgba(67, 72, 92, 0.5);
+  background-color: rgba(67, 72, 92, 0.4);
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
@@ -207,8 +207,8 @@
 }
 
 .form-range::-moz-range-track {
-  background-color: rgba(67, 72, 92, 0.5);
+  background-color: rgba(67, 72, 92, 0.4);
 }
 .form-range::-webkit-slider-runnable-track {
-  background-color: rgba(67, 72, 92, 0.5);
+  background-color: rgba(67, 72, 92, 0.4);
 }
