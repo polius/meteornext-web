@@ -48,6 +48,22 @@
 }
 
 #individual_signup {
+  background-color: #0984e3;
+  color: #f6f6f6;
+}
+
+#organization_signup {
+  background-color: #10ac84;
+  color: #f6f6f6;
+}
+
+#enterprise_signup {
+  background-color: #ff6b6b;
+  color: #f6f6f6;
+}
+
+/*
+#individual_signup {
   border: 1px solid #0984e3;
   color: #0984e3;
   transition: 0.3s;
@@ -79,6 +95,7 @@
   background-color: #ff6b6b;
   color: #f6f6f6;
 }
+*/
 
 .row .table{
   padding: 28px 0;
