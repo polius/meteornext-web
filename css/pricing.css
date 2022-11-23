@@ -62,41 +62,6 @@
   color: #f6f6f6;
 }
 
-/*
-#individual_signup {
-  border: 1px solid #0984e3;
-  color: #0984e3;
-  transition: 0.3s;
-}
-
-#individual_signup:hover {
-  background-color: #0984e3;
-  color: #f6f6f6;
-}
-
-#organization_signup {
-  border: 1px solid #10ac84;
-  color: #10ac84;
-  transition: 0.3s;
-}
-
-#organization_signup:hover {
-  background-color: #10ac84;
-  color: #f6f6f6;
-}
-
-#enterprise_signup {
-  border: 1px solid #ff6b6b;
-  color: #ff6b6b;
-  transition: 0.3s;
-}
-
-#enterprise_signup:hover {
-  background-color: #ff6b6b;
-  color: #f6f6f6;
-}
-*/
-
 .row .table{
   padding: 28px 0;
 }
