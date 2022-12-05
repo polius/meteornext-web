@@ -80,7 +80,7 @@ body {
     text-align: left!important;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .navbar-collapse{
     margin-right:-20px;
   }
