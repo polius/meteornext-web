@@ -9,7 +9,7 @@
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <main style="flex:1">
@@ -33,7 +33,7 @@
                 <a class="home nav-link active" aria-current="page" href="./about" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">About</a>
               </li>
               <li class="nav-item">
-                <a class="home nav-link active" href="https://docs.meteornext.io" target="_blank" style="font-size:18px; padding-left:1.5rem">Docs</a>
+                <a class="home nav-link active" href="https://docs.meteornext.io" target="_blank" style="font-size:18px; padding-left:1.5rem;">Docs<i class="fa-solid fa-up-right-from-square" style="margin-left:10px"></i></a>
               </li>
               <li class="nav-item" style="margin-left:auto">
                 <a class="nav-link active" href="https://account.meteornext.io/register" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Sign up</a>
@@ -47,21 +47,35 @@
       </nav>
       <!-- 404 -->
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: calc(100vh - 280px)">
-        <p style="font-size: max(6vw, 60px); font-weight: 600; color:#183153">Ooops!</p>
-        <p style="font-size: max(2.4vw, 32px); font-weight: 500; margin-top:15px; color:#183153">Page not found</p>
+        <p style="font-size: max(5vw, 60px); font-weight: 600; color:#183153">Ooops!</p>
+        <p style="font-size: max(2vw, 32px); font-weight: 500; margin-top:15px; color:#183153">Page not found</p>
       </div>
     </div>
   </main>
   <!-- FOOTER -->
-  <footer style="height:98px; padding-top:20px; padding-bottom: 20px; background-color: #292c36;">
-    <div style="text-align: center">
-      <a href="terms-of-service" style="color:white; text-decoration:none">Terms of Service</a>
-      <span style="color:white; margin-left:5px; margin-right:5px">|</span>
-      <a href="privacy" style="color:white; text-decoration:none">Privacy Policy</a>
-      <span style="color:white; margin-left:5px; margin-right:5px">|</span>
-      <a href="contact" style="color:white; text-decoration:none">Contact</a>
+  <footer style="background-color: #292c36; padding:20px">
+    <div class="container" style="max-width: 700px">
+      <div class="row">
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Meteor Next</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/features" style="text-decoration:none; color:white">Features</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/pricing" style="text-decoration:none; color:white">Pricing</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/docs" style="text-decoration:none; color:white">Docs</a></div>
+        </div>
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Company</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/about" style="text-decoration:none; color:white">About</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/contact" style="text-decoration:none; color:white">Contact</a></div>
+        </div>
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Legal</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/terms-of-service" style="text-decoration:none; color:white">Terms of Service</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/privacy" style="text-decoration:none; color:white">Privacy Policy</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/cookies" style="text-decoration:none; color:white">Cookie Policy</a></div>
+        </div>
+      </div>
     </div>
-    <div style="margin-top:15px; width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
+    <div style="width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
   </footer>
   <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

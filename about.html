@@ -9,19 +9,27 @@
   <link rel="icon" type="image/x-icon" href="assets/logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
   <style scoped>
     @media (max-width: 991px) {
       .mobile {
         background-size: 200% 200% !important;
       }
     }
+    p {
+      margin-bottom:16px;
+      font-size:1.15rem;
+      line-height:1.5;
+      color: rgb(220,220,220);
+    }
+    div {
+      color: rgb(220,220,220);
+    }
   </style>
 </head>
 <body>
-  <main style="flex:1">
-    <div class="mobile" style="padding-left:15px; padding-right:15px; padding-bottom:40px; background-image:url('assets/bg.png'); background-repeat: no-repeat; background-size: cover">
+  <main style="flex:1; background-color:rgb(52,52,62)">
+    <div class="mobile" style="padding-left:15px; padding-right:15px; padding-bottom:60px; background-image:url('assets/bg.png'); background-repeat: no-repeat; background-size: cover">
       <!-- NAVIGATION -->
       <nav class="navbar navbar-expand-lg navbar-dark" style="max-width:1300px; margin-left:auto!important; margin-right:auto!important; padding-top:20px; padding-bottom:20px">
         <div class="container-fluid" style="background-color:rgba(61, 61, 80, 0.75); padding-left:20px; padding-right:20px; height:80px">
@@ -41,7 +49,7 @@
                 <a class="home nav-link active" aria-current="page" href="./about" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">About</a>
               </li>
               <li class="nav-item">
-                <a class="home nav-link active" href="https://docs.meteornext.io" target="_blank" style="font-size:18px; padding-left:1.5rem">Docs</a>
+                <a class="home nav-link active" href="https://docs.meteornext.io" target="_blank" style="font-size:18px; padding-left:1.5rem;">Docs<i class="fa-solid fa-up-right-from-square" style="margin-left:10px"></i></a>
               </li>
               <li class="nav-item" style="margin-left:auto">
                 <a class="nav-link active" href="https://account.meteornext.io/register" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Sign up</a>
@@ -54,50 +62,60 @@
         </div>
       </nav>
       <!-- ABOUT -->
-      <div style="margin-left:auto; margin-right:auto; margin-top:min(50px, 5%)">
-        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-once="true" class="h1" style="text-align:center; color:#183153; font-size:44px; font-weight:600">About</h1>
+      <div style="margin-left:auto; margin-right:auto; margin-top:50px">
+        <h1 class="h1" style="text-align:center; color:#183153; font-size:44px; font-weight:600">About</h1>
       </div>
     </div>
-    <div style="background-color: #323445; padding-top:30px">
-      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="container" style="font-size:15.5px; color: #c3c6d1; line-height: 1.7; padding-bottom: 10px">
-        <div style="color:#f0f1f3; font-size:21px; font-weight:500; margin-bottom:20px">Our story</div>
-        <p>Founded in 2022, we are a bootstrapped, profitable company with a focus on world-class database engineering and customer service.</p>
-        <p>Meteor Next began as a spare time project in 2018 based on our experiences with the difficulty of deploying database changes when consulting to enterprises and mid-sized companies.</p>
-        <p>We realized each company uses different ways to deploy database changes, most of the time using self-made custom scripts written in Python, PHP or Go.</p>
-        <p>At this point, we thought that something as critical as performing massive database changes should be simpler and safer. We've spent the last years innovating and setting the standard in this space.</p>
-        <p>This has been possible thanks to our partnership with a mid-sized AI company based on natural language processing. We've been testing and improving the app day by day in all environments, starting from Testing and finally reaching Production.</p>
-        <p>Based on all the feedback we received from more than 100 employees, we've been able to fully polish this app to the edge, making it fully stable, production ready, secure and easy to use.</p>
-        <p>Today, Meteor Next brings more than a way of performing secure deployments. It also has a dedicated section to monitor all the database servers, a section to perform massive data transfer operations and a client to access all servers.</p>
-        <p>After all these years of development and testing, we could now say that Meteor Next is capable to solve the needs that most companies have in relation to their data infrastructure.</p>
-        <div style="color:#f0f1f3; font-size:21px; font-weight:500; margin-top:20px; margin-bottom:20px">Roadmap</div>
-        <p>At the moment, Meteor Next only supports MySQL and AWS Aurora MySQL engines. We plan to increase the amount of supported engines, starting with PostgreSQL.</p>
-      </div>
+    <div class="container" style="font-size:15.5px; color: #051627; line-height: 1.5; padding-left:24px; padding-right:24px; margin-bottom:60px; max-width:1000px">
+      <div style="margin-top:60px; margin-bottom:20px; font-size:1.75rem; font-weight:600; letter-spacing:-.035rem;">Our story</div>
+      <p>Founded in 2022, we are a bootstrapped, profitable company with a focus on world-class database engineering and customer service.</p>
+      <p>Meteor Next began as a spare time project in 2018 based on our experiences with the difficulty of deploying database changes when consulting to enterprises and mid-sized companies.</p>
+      <p>We realized each company uses different ways to deploy database changes, most of the time using self-made custom scripts written in Python, PHP or Go.</p>
+      <p>At this point, we thought that something as critical as performing massive database changes should be simpler and safer. We've spent the last years innovating and setting the standard in this space.</p>
+      <p>This has been possible thanks to our partnership with a mid-sized AI company based on natural language processing. We've been testing and improving the app day by day in all environments, starting from Testing and finally reaching Production.</p>
+      <p>Based on all the feedback we received from more than 100 employees, we've been able to fully polish this app to the edge, making it fully stable, production ready, secure and easy to use.</p>
+      <p>Today, Meteor Next brings more than a way of performing secure deployments. It also has a dedicated section to monitor all the database servers, a section to perform massive data transfer operations and a client to access all servers.</p>
+      <p>After all these years of development and testing, we could now say that Meteor Next is capable to solve the needs that most companies have in relation to their data infrastructure.</p>
+      <div style="color:#f0f1f3; font-size:21px; font-weight:500; margin-top:20px; margin-bottom:20px">Roadmap</div>
+      <p>At the moment, Meteor Next only supports MySQL and AWS Aurora MySQL engines. We plan to increase the amount of supported engines, starting with PostgreSQL.</p>
     </div>
   </main>
   <!-- FOOTER -->
-  <footer style="height:98px; padding-top:20px; padding-bottom: 20px; background-color: #292c36">
-    <div style="text-align: center">
-      <a href="terms-of-service" style="color:white; text-decoration:none">Terms of Service</a>
-      <span style="color:white; margin-left:5px; margin-right:5px">|</span>
-      <a href="privacy" style="color:white; text-decoration:none">Privacy Policy</a>
-      <span style="color:white; margin-left:5px; margin-right:5px">|</span>
-      <a href="contact" style="color:white; text-decoration:none">Contact</a>
+  <footer style="background-color: #292c36; padding:20px">
+    <div class="container" style="max-width: 700px">
+      <div class="row">
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Meteor Next</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/features" style="text-decoration:none; color:white">Features</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/pricing" style="text-decoration:none; color:white">Pricing</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/docs" style="text-decoration:none; color:white">Docs</a></div>
+        </div>
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Company</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/about" style="text-decoration:none; color:white">About</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/contact" style="text-decoration:none; color:white">Contact</a></div>
+        </div>
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Legal</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/terms-of-service" style="text-decoration:none; color:white">Terms of Service</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/privacy" style="text-decoration:none; color:white">Privacy Policy</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/cookies" style="text-decoration:none; color:white">Cookie Policy</a></div>
+        </div>
+      </div>
     </div>
-    <div style="margin-top:15px; width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
+    <div style="width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
   </footer>
   <!-- BACK TO TOP -->
   <a href="#" id="scrollButton" class="scrollUpButton" onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i class="fas fa-angle-up"></i></a>
   <!-- SCRIPTS -->
   <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="off" data-website-uuid="847e692a-b0d3-499c-895a-43f049e1e3de"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="js/medium-zoom.min.js"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
     mediumZoom('[zoom]', { background: '#282A35' })
-    AOS.init();
     // Scroll
     var scrollButton = document.getElementById("scrollButton")
     window.onscroll = function() {
