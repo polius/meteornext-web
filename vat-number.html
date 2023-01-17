@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>How VAT works and is collected - Meteor Next</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  <style scoped>
+    @media (max-width: 991px) {
+      .mobile {
+        background-size: 200% 200% !important;
+      }
+    }
+    p, ul {
+      margin-bottom:16px;
+      font-size:1.15rem;
+      line-height:1.5;
+      color: rgb(220,220,220);
+    }
+    div {
+      color: rgb(220,220,220);
+    }
+  </style>
+</head>
+<body>
+  <main style="flex:1; background-color:rgb(52,52,62)">
+    <div class="mobile" style="padding-left:15px; padding-right:15px; padding-bottom:60px; background-image:url('assets/bg.png'); background-repeat: no-repeat; background-size: cover">
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-expand-xl navbar-dark" style="max-width:1300px; margin-left:auto!important; margin-right:auto!important; padding-top:20px; padding-bottom:20px">
+        <div class="container-fluid" style="background-color:rgba(61, 61, 80, 0.75); padding-left:20px; padding-right:20px; height:80px">
+          <a class="navbar-brand" href="/" style="height:100%; font-size:24px; margin-right:auto; display: flex; align-items: center;"><img class="icon" src="assets/logo.png" width="50" height="50" style="margin-right:15px; margin-bottom:4px;">Meteor Next</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:1.5rem; z-index:2">
+            <ul class="navbar-nav" style="width:100%; align-items:center; padding-left:20px">
+              <li class="nav-item">
+                <a class="home nav-link active" aria-current="page" href="./features" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="home nav-link active" aria-current="page" href="./pricing" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="home nav-link active" aria-current="page" href="./about" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="home nav-link active" href="https://docs.meteornext.io" target="_blank" style="font-size:18px; padding-left:1.5rem;">Docs<i class="fa-solid fa-up-right-from-square" style="margin-left:10px; font-size:16px"></i></a>
+              </li>
+              <li class="nav-item" style="margin-left:auto">
+                <a class="nav-link active" href="https://account.meteornext.io/register" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://account.meteornext.io/login" class="btn btn-primary btn-lg btn-signin" style="border-radius:25px; font-size:18px; padding-left:20px; padding-right:20px" tabindex="-1" role="button">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- PRIVACY POLICY -->
+      <div style="margin-left:auto; margin-right:auto; margin-top:50px">
+        <h1 class="h1" style="text-align:center; color:#183153; font-size:28px; font-weight:600">How VAT works and is collected</h1>
+      </div>
+    </div>
+    <div class="container" style="font-size:15.5px; color: #051627; line-height: 1.5; padding-top:80px; padding-left:24px; padding-right:24px; margin-bottom:40px; max-width:800px">
+      <p><span style="font-weight:500">Value-added tax (VAT) is a consumption tax on the value added to goods and services</span>; in our case, sofware licensed products. Meteor Next is sold by PoliusCorp, SL, a business registered in Spain. We are still required to charge value-added tax (VAT) for business-to-consumer (B2C) transactions to those in the EU and the UK. The VAT rate is set by each country.</p>
+      <p>For business-to-business transactions (B2B), we do what is called a reverse-charge VAT. If your business is registered in the EU or the UK and you have a valid VAT number, you will be exempt from VAT. You simply need to enter a valid VAT number and the business name on the <a href="https://account.meteornext.io" style="color:rgb(63, 165, 251)">Meteor Next Account</a> profile.</p>
+
+      <div style="margin-top:40px; margin-bottom:20px; font-size:1.5rem; font-weight:600; letter-spacing:-.03rem;">FAQs</div>
+      <p style="font-weight:600">I'm not located in the EU or UK. Am I still charged VAT?</p>
+      <p>If your billing address is registered outside of the EU or UK, you will not be charged VAT on checkout. This is automatically determined by the country you choose at the moment to purchase a Meteor Next license.</p>
+      <p style="font-weight:600">I'm not in the EU or UK. Will you validate my VAT number?</p>
+      <p>At this time, we only support reverse-charge on VAT for customers in the EU or UK with valid VAT numbers.</p>
+      <p style="font-weight:600">Who gets the VAT?</p>
+      <p>VAT is collected by us and submitted each quarter to its respective EU member state or UK tax authority.</p>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer style="background-color: #292c36; padding:20px">
+    <div class="container" style="max-width: 700px">
+      <div class="row">
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Meteor Next</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/features" style="text-decoration:none; color:white">Features</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/pricing" style="text-decoration:none; color:white">Pricing</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://docs.meteornext.io" target="_href" style="text-decoration:none; color:white">Docs<i class="fa-solid fa-up-right-from-square" style="margin-left:6px; font-size:12px"></i></a></div>
+        </div>
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Company</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/about" style="text-decoration:none; color:white">About</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/contact" style="text-decoration:none; color:white">Contact</a></div>
+        </div>
+        <div class="col-sm" style="text-align: center; margin-bottom: 15px">
+          <div class="col-sm" style="text-align: center; color:#a9a9a9; margin-bottom:2px">Legal</div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/terms-of-service" style="text-decoration:none; color:white">Terms of Service</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/privacy" style="text-decoration:none; color:white">Privacy Policy</a></div>
+          <div class="col-sm" style="text-align: center"><a href="https://www.meteornext.io/cookies" style="text-decoration:none; color:white">Cookie Policy</a></div>
+        </div>
+      </div>
+    </div>
+    <div style="width:100%; color:white; text-align: center; font-size:14px">Copyright © <span id="year"></span> Meteor Next</div>
+  </footer>
+  <!-- BACK TO TOP -->
+  <a href="#" id="scrollButton" class="scrollUpButton" onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i class="fas fa-angle-up"></i></a>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="off" data-website-uuid="847e692a-b0d3-499c-895a-43f049e1e3de"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/medium-zoom.min.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    mediumZoom('[zoom]', { background: '#282A35' })
+    // Scroll
+    var scrollButton = document.getElementById("scrollButton")
+    window.onscroll = function() {
+      if ((document.documentElement.scrollTop || document.body.scrollTop) > 200) scrollButton.classList.add('show')
+      else scrollButton.classList.remove('show')
+    }
+    $(document).ready(function () {
+      $(document).click(function (event) {
+        if (!$(event.target).hasClass("navbar-nav")) $('.navbar-collapse').collapse('hide')
+      });
+    });
+  </script>
+</body>
+</html>
