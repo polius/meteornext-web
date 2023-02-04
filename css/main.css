@@ -72,9 +72,10 @@ body {
   visibility: visible;
 }
 /* MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 657px) {
   .h1{
-    font-size: 36px!important;
+    font-size: 32px!important;
+    margin-bottom: 40px!important;
   }
   .left{
     text-align: left!important;
