@@ -74,10 +74,10 @@
                 <a class="home nav-link active" href="https://docs.meteornext.io" target="_blank" rel="noopener noreferrer" style="font-size:18px; padding-left:1.5rem;">Docs<i class="fa-solid fa-up-right-from-square" style="margin-left:10px; font-size:16px"></i></a>
               </li>
               <li class="nav-item" style="margin-left:auto">
-                <a class="nav-link active" href="https://account.meteornext.io/register" style="font-size:18px; padding-left:1.5rem; padding-right:1.5rem;">Sign up</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://account.meteornext.io/login" class="btn btn-primary btn-lg btn-signin" style="border-radius:25px; font-size:18px; padding-left:20px; padding-right:20px" tabindex="-1" role="button">Sign in</a>
+                <a class="home nav-link active" href="https://github.com/polius/meteornext-app" target="_blank" rel="noopener noreferrer" style="font-size:18px; padding-left:1.5rem; text-align:right">
+                  View on Github
+                  <img src="assets/github-mark-white.png" width="40" style="margin-left:10px; margin-bottom:5px;">
+                </a>
               </li>
             </ul>
           </div>
@@ -87,95 +87,8 @@
     <!-- PRICING -->
     <div style="margin-left:auto; margin-right:auto; padding-left:20px; padding-right:20px; margin-top:50px">
       <h1 class="h1" style="text-align:center; color:#183153; font-size:44px; font-weight:600; margin-bottom:40px">Pricing</h1>
-      <div style="color:#183153; margin-top:40px; margin-bottom:30px; text-align:center; font-size:1.5rem; line-height:1.7; font-weight:400">Pay only for the resources you need. Nothing more, nothing less.</div>
-    </div>
-    <div id="generic_price_table">
-      <div class="container p-4" style="padding-bottom:0px!important">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="generic_content clearfix" style="border-radius: 10px">                
-              <div class="generic_head_price clearfix">
-                <div class="generic_head_content clearfix" style="background-color:#0984e3">
-                  <span>Individual</span>
-                </div>
-                <div class="generic_price_tag clearfix">  
-                  <span class="price">
-                    <span class="currency" style="font-size: 34px; font-family: Montserrat">Free</span>
-                  </span>
-                </div>
-              </div>
-              <div class="generic_feature_list">
-                <ul>
-                  <li><span style="font-weight:500">1</span> server per user</li>
-                  <li><span style="font-weight:500">Unlimited</span> users</li>
-                  <li><span style="font-weight:500">Standard</span> support</li>
-                </ul>
-              </div>
-              <div class="generic_price_btn clearfix">
-                <a id="individual_signup" href="https://account.meteornext.io/register" target="_blank" rel="noopener noreferrer" style="width:200px">Let's start!</a>
-              </div>
-            </div>                
-          </div>
-          <div class="col-md-4">
-            <div class="generic_content clearfix active" style="border-radius: 10px">
-              <div class="generic_head_price clearfix">
-                <div class="generic_head_content clearfix" style="background-color:#13a880">
-                  <span>Organization</span>
-                </div>
-                <div class="generic_price_tag clearfix">  
-                  <span class="price">
-                    <span class="sign">€</span>
-                    <span id="currency" class="currency"></span>
-                    <span id="cent" class="cent"></span>
-                    <span class="month" style="margin-left:2px">/Month</span>
-                  </span>
-                </div>
-              </div>
-              <div style="padding-top: 20px; padding-left: 40px; padding-right: 40px">
-                <label style="margin-bottom:15px; color:#f6f6f6;">Enter the amount of servers</label>
-                <input id="priceInput" onkeypress="isNumber(event)" class="form-control" style="width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-bottom: 12px; background-color: rgba(67, 72, 92, 0.7); border-color:rgb(72, 78, 82); color:#f6f6f6">
-                <input id="priceRange" type="range" class="form-range" min="5" max="500">
-                <label style="margin-top:5px; color:#f6f6f6">Avg. <span style="font-weight: 400; color:#fff"><span id="priceAvg"></span>€</span> per server.</label>
-              </div>
-              <div style="height:1px; width:90%; margin-left:auto; margin-right:auto; background-color: rgba(67, 72, 92, 0.7); margin-top:20px; margin-bottom:10px"></div>
-              <div class="generic_feature_list" style="padding-top:5px">
-                <ul>
-                  <li><span id="numberServers" style="font-weight:500">5</span> servers per user</li>
-                  <li><span style="font-weight:500">Unlimited</span> users</li>
-                  <li><span style="font-weight:500">Priority</span> support</li>
-                </ul>
-              </div>
-              <div class="generic_price_btn clearfix">
-                <a id="organization_signup" href="https://account.meteornext.io/register" target="_blank" rel="noopener noreferrer" style="width:min(90%, 300px)">Let's start!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="generic_content clearfix" style="border-radius: 10px">
-              <div class="generic_head_price clearfix">
-                <div class="generic_head_content clearfix" style="background-color:#ff6b6b">
-                  <span>Enterprise</span>
-                </div>
-                <div class="generic_price_tag clearfix">  
-                  <span class="price">
-                    <span class="currency" style="font-size:34px; font-family: Montserrat">Let's chat</span>
-                  </span>
-                </div>
-              </div>
-              <div class="generic_feature_list">
-                <ul>
-                  <li><span style="font-weight:500">+500</span> servers per user</li>
-                  <li><span style="font-weight:500">Unlimited</span> users</li>
-                  <li><span style="font-weight:500">Priority</span> support</li>
-                </ul>
-              </div>
-              <div class="generic_price_btn clearfix">
-                <a id="enterprise_signup" href="mailto:contact@meteornext.io" target="_blank" rel="noopener noreferrer" style="width:200px">Email Us</a>
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
+      <div style="color:#183153; margin-top:50px; margin-bottom:30px; text-align:center; font-size:1.6rem; line-height:1.7; font-weight:500">Transparent, open-source, and free - that's our commitment to you.</div>
+      <img src="assets/opensource-logo.png" width="160" style="margin-left:auto; margin-right: auto; display: block; margin-bottom: 80px;">
     </div>
   </main>
   <!-- FOOTER -->
@@ -221,13 +134,13 @@
       else scrollButton.classList.remove('show')
     }
     // Calculate pricing
-    calculatePrice(5)
-    document.getElementById("priceRange").oninput = function() {
-      calculatePrice(this.value)
-    }
-    document.getElementById("priceInput").oninput = function() {
-      calculatePrice(this.value)
-    }
+    // calculatePrice(5)
+    // document.getElementById("priceRange").oninput = function() {
+    //   calculatePrice(this.value)
+    // }
+    // document.getElementById("priceInput").oninput = function() {
+    //   calculatePrice(this.value)
+    // }
     function calculatePrice(value) {
       // Get Components
       let priceInput = document.getElementById("priceInput")
